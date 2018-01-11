@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.sothree.slidinguppanel.SlidingUpPanelLayout
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sliding_panel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoPanelHeight="48dp"
+    sothree:umanoDragView="@+id/ll"
+    sothree:umanoOverlay="true"
+    sothree:umanoScrollableView="@id/textView2"
+    sothree:umanoFadeColor="@color/colorAccent"
+    sothree:umanoShadowHeight="4dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusable="false"
+        android:clickable="true">
+
+        <LinearLayout
+            android:id="@+id/ll_footer"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="text"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+
+        </LinearLayout>
+
+
+
+
+
+       <fragment
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:name="com.example.user.pagerslide.OpenFrag">
+
+
+       </fragment>
+
+    </LinearLayout>
+
+
+
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+
+
